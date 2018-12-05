@@ -6,7 +6,7 @@
 //This function uses pointer arithmetic to copy string 2 to string 1
 void copy_string(char* s1, const char* s2)
 { 
-  for( ; (*s1 = *s2) != '\0' ; s1++, s2++){
+  for( ; (*s1 = *s2) != '\0' ; s1++, s2++){//this header performs the entire copy operation
     ;//do nothing in body
   }
 }
@@ -14,10 +14,10 @@ void copy_string(char* s1, const char* s2)
 //This function uses pointer arithmetic to append string 2 to string 1
 void append_string(char* s1, const char* s2)
 {
-  for( ; *s1 != '\0' ; s1++){
+  for( ; *s1 != '\0' ; s1++){//s1 now points to the NULL character in string 1
     ;//do nothing in body
    }
-  for( ; (*s1 = *s2) != '\0' ; s1++, s2++){
+  for( ; (*s1 = *s2) != '\0' ; s1++, s2++){//this header performs the entire copy operation
     ;//do nothing in body
    }
 }
